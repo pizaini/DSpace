@@ -14,17 +14,25 @@ http_path = "/themes/bootstrap/"
 css_dir = "styles"
 sass_dir = "styles"
 images_dir = "images"
+generated_images_dir = "dist/images/generated"
 javascripts_dir = "scripts"
+
+fonts_dir = "styles/fonts"
+http_images_path = "/images"
+http_generated_images_path = "/images/generated"
+http_fonts_path = "/styles/fonts"
+relative_assets = false
+asset_cache_buster = :none
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
-output_style = :expanded
+output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = true
+line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this

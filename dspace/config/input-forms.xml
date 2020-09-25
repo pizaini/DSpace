@@ -360,6 +360,10 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value></stored-value>
      </pair>
      <pair>
+       <displayed-value>Indonesia</displayed-value>
+       <stored-value>id</stored-value>
+     </pair>
+     <pair>
        <displayed-value>English (United States)</displayed-value>
        <stored-value>en_US</stored-value>
       </pair>

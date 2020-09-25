@@ -343,7 +343,8 @@
                         </button>
 
                         <a href="{$context-path}/" class="navbar-brand">
-                            <img src="{$theme-path}images/DSpace-logo-line.svg" />
+                            <img src="{$theme-path}images/logo-inverse.png" />
+<!--                            <img src="{$theme-path}images/DSpace-logo-line.svg" />-->
                         </a>
 
 
@@ -702,7 +703,10 @@
                     <hr/>
                     <div class="col-xs-7 col-sm-8">
                         <div>
-                            <a href="http://www.dspace.org/" target="_blank">DSpace software</a> copyright&#160;&#169;&#160;2002-2016&#160; <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+                            Copyright&#160;&#169;&#160;<a href="https://pustaka.stai-tbh.ac.id" target="_blank">Perpustakaan STAI Auliaurrasyidin</a>
+                        </div>
+                        <div>
+                            All right reserved
                         </div>
                         <div class="hidden-print">
                             <a>
@@ -726,11 +730,11 @@
                     </div>
                     <div class="col-xs-5 col-sm-4 hidden-print">
                         <div class="pull-right">
-                            <span class="theme-by">Theme by&#160;</span>
+                            <span class="theme-by">STAI Auliaurrasyidin</span>
                             <br/>
-                            <a title="Atmire NV" target="_blank" href="http://atmire.com">
-                                <img alt="Atmire NV" src="{concat($theme-path, 'images/atmire-logo-small.svg')}"/>
-                            </a>
+                            <a title="Repository" href="https://repository.stai-tbh.ac.id/">Scientific Repository</a>
+                            <br/>
+                            <a title="Website" href="https://www.stai-tbh.ac.id/">Website STAI Auliaurrasyidin</a>
                         </div>
 
                     </div>
