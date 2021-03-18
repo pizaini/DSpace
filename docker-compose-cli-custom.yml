@@ -21,13 +21,13 @@ services:
     - assetstore:/dspace/assetstore
     entrypoint: /dspace/bin/dspace
     command: help
-    networks:
-      - dspacenet
+#     networks:
+#       - dspacenet
     tty: true
     stdin_open: true
 
 volumes:
   assetstore:
 
-networks:
-  dspacenet:
+# networks:
+#   dspacenet:

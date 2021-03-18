@@ -38,6 +38,16 @@
 
    <form name="traditional">
      <page number="1">
+			<field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Advisor</label>
+         <input-type>name</input-type>
+         <hint>Enter the names of the advisor of this item.</hint>
+         <required></required>
+       </field>
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
@@ -91,7 +101,7 @@
          <repeatable>false</repeatable>
          <label>Publisher</label>
          <input-type>onebox</input-type>
-         <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
+         <hint>Enter the name of the publisher of the previously issued instance of this item: STAI Auliaurrasyidin</hint>
          <required></required>
        </field>
 
@@ -175,28 +185,6 @@ it, please enter the types and the actual numbers or codes.</hint>
          <label>Abstract</label>
          <input-type>textarea</input-type>
          <hint>Enter the abstract of the item. </hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier>sponsorship</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Sponsors</label>
-         <input-type>textarea</input-type>
-         <hint>Enter the names of any sponsors and/or funding codes in the box. </hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>description</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Description</label>
-         <input-type>textarea</input-type>
-         <hint>Enter any other description or comments in this box. </hint>
          <required></required>
        </field>
      </page>
