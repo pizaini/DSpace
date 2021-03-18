@@ -54,9 +54,13 @@ EXPOSE 8080 8009
 ENV JAVA_OPTS=-Xmx2000m
 
 RUN ln -s $DSPACE_INSTALL/webapps/solr    /usr/local/tomcat/webapps/solr    && \
-    ln -s $DSPACE_INSTALL/webapps/xmlui   /usr/local/tomcat/webapps/xmlui   && \
+    ln -s $DSPACE_INSTALL/webapps/xmlui   /usr/local/tomcat/webapps/ROOT   && \
     ln -s $DSPACE_INSTALL/webapps/rest    /usr/local/tomcat/webapps/rest    && \
     ln -s $DSPACE_INSTALL/webapps/oai     /usr/local/tomcat/webapps/oai     && \
     ln -s $DSPACE_INSTALL/webapps/rdf     /usr/local/tomcat/webapps/rdf     && \
     ln -s $DSPACE_INSTALL/webapps/sword   /usr/local/tomcat/webapps/sword   && \
     ln -s $DSPACE_INSTALL/webapps/swordv2 /usr/local/tomcat/webapps/swordv2
+
+#Modify Catalina ROOT
+COPY dspace/src/main/docker-compose/ROOT.xml /usr/local/tomcat/conf/Catalina/localhost/ROOT.xml
+RUN sed -i -e "s|\${dspace.dir}|$DSPACE_INSTALL|" /usr/local/tomcat/conf/Catalina/localhost/ROOT.xml
